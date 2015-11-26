@@ -7,8 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SKDropDown.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <SKDropDownDelegate>
+@property (strong, nonatomic) SKDropDown *dropDown;
+
+
+- (IBAction)showOrHideDropDown:(id)sender;
 
 
 @end

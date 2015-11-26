@@ -19,73 +19,44 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2nh-Wt-JmX">
-                                <rect key="frame" x="0.0" y="14" width="600" height="444"/>
+                                <rect key="frame" x="0.0" y="14" width="600" height="380"/>
                                 <animations/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.0"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t3s-hK-zJj">
-                                <rect key="frame" x="232" y="466" width="137" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0xw-We-yPr">
+                                <rect key="frame" x="338" y="406" width="242" height="51"/>
                                 <animations/>
-                                <color key="backgroundColor" red="0.40000000600000002" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="New Photo or Video">
-                                    <color key="titleShadowColor" red="0.40000000600000002" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.33574525326371807" green="0.51923249749098133" blue="0.79891099084848483" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Choose From List">
+                                    <color key="titleShadowColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="shootPictureOrVideo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VSo-cs-P1Y"/>
+                                    <action selector="showOrHideDropDown:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zzm-RY-5Nd"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1u4-yz-gSH">
-                                <rect key="frame" x="242" y="550" width="117" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="fg" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="08e-8m-hJD">
+                                <rect key="frame" x="20" y="406" width="192" height="55"/>
                                 <animations/>
-                                <state key="normal" title="Pick from Library"/>
-                                <connections>
-                                    <action selector="selectExistingPictureOrVideo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3BY-3q-3kX"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="08e-8m-hJD">
-                                <rect key="frame" x="20" y="475" width="87" height="21"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3as-hf-hW2">
-                                <rect key="frame" x="20" y="550" width="64" height="30"/>
-                                <animations/>
-                                <state key="normal" title="Translate"/>
-                                <connections>
-                                    <action selector="getTranslation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7u3-UG-t05"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nm7-Cd-Pee">
-                                <rect key="frame" x="132" y="471" width="43" height="30"/>
-                                <animations/>
-                                <state key="normal" title="Speak"/>
-                                <connections>
-                                    <action selector="speakText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Aeu-cj-nkC"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="1u4-yz-gSH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0NU-Ze-tFk"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="1u4-yz-gSH" secondAttribute="bottom" constant="20" id="4uY-8j-spA"/>
-                            <constraint firstItem="t3s-hK-zJj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7ZL-fK-gm3"/>
-                            <constraint firstItem="2nh-Wt-JmX" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-6" id="IQV-7c-NCP"/>
-                            <constraint firstItem="08e-8m-hJD" firstAttribute="top" secondItem="2nh-Wt-JmX" secondAttribute="bottom" constant="17" id="Jyj-bz-IBd"/>
-                            <constraint firstItem="3as-hf-hW2" firstAttribute="top" secondItem="08e-8m-hJD" secondAttribute="bottom" constant="54" id="TeV-Td-TX1"/>
-                            <constraint firstItem="1u4-yz-gSH" firstAttribute="top" secondItem="t3s-hK-zJj" secondAttribute="bottom" constant="54" id="X3t-os-hQf"/>
-                            <constraint firstItem="t3s-hK-zJj" firstAttribute="top" secondItem="2nh-Wt-JmX" secondAttribute="bottom" constant="8" id="aUI-cA-CVi"/>
-                            <constraint firstItem="Nm7-Cd-Pee" firstAttribute="top" secondItem="2nh-Wt-JmX" secondAttribute="bottom" constant="13" id="d1z-MM-TvF"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="08e-8m-hJD" secondAttribute="leading" id="kpa-2l-Ez0"/>
-                            <constraint firstItem="Nm7-Cd-Pee" firstAttribute="leading" secondItem="08e-8m-hJD" secondAttribute="trailing" constant="25" id="nKC-qs-l6u"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="3as-hf-hW2" secondAttribute="leading" id="qwi-Vv-aWE"/>
-                            <constraint firstItem="2nh-Wt-JmX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rUJ-gG-SX0"/>
+                            <constraint firstItem="2nh-Wt-JmX" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-6" id="AiL-nj-SJw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0xw-We-yPr" secondAttribute="trailing" id="MP9-oE-pvf"/>
+                            <constraint firstItem="08e-8m-hJD" firstAttribute="top" secondItem="2nh-Wt-JmX" secondAttribute="bottom" constant="12" id="eBC-7W-Q9R"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="08e-8m-hJD" secondAttribute="leading" id="md4-5g-Yih"/>
+                            <constraint firstItem="0xw-We-yPr" firstAttribute="top" secondItem="2nh-Wt-JmX" secondAttribute="bottom" constant="12" id="nNL-ms-ezm"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="2nh-Wt-JmX" secondAttribute="bottom" constant="206" id="qGH-O0-kId"/>
+                            <constraint firstItem="2nh-Wt-JmX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vqB-av-HOL"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="B_openList" destination="0xw-We-yPr" id="7UB-5j-Ctq"/>
                         <outlet property="imageView" destination="2nh-Wt-JmX" id="htg-Wa-PWv"/>
-                        <outlet property="takePictureButton" destination="t3s-hK-zJj" id="br0-O8-ihF"/>
                         <outlet property="textLabel" destination="08e-8m-hJD" id="MBO-up-18m"/>
                     </connections>
                 </viewController>

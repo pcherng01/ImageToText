@@ -13,6 +13,9 @@
 		3B0C8E321C00C05D0055C400 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B0C8E301C00C05D0055C400 /* Main.storyboard */; };
 		3B0C8E341C00C05D0055C400 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B0C8E331C00C05D0055C400 /* Assets.xcassets */; };
 		3B0C8E371C00C05D0055C400 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B0C8E351C00C05D0055C400 /* LaunchScreen.storyboard */; };
+		3B0DCA101C01EF640046F9D7 /* Info.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3B0DCA0F1C01EF640046F9D7 /* Info.jpg */; };
+		3B0DCA131C01F3220046F9D7 /* AKPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B0DCA121C01F3220046F9D7 /* AKPickerView.m */; };
+		3B0DCA161C0239560046F9D7 /* SKDropDown.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B0DCA151C0239560046F9D7 /* SKDropDown.m */; };
 		3B6DE6001C0190AD00DC9D83 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B6DE5FE1C0190AD00DC9D83 /* Bolts.framework */; };
 		3B6DE6011C0190AD00DC9D83 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B6DE5FF1C0190AD00DC9D83 /* Parse.framework */; };
 		3B6DE6031C0190C100DC9D83 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B6DE6021C0190C100DC9D83 /* AudioToolbox.framework */; };
@@ -40,6 +43,11 @@
 		3B0C8E331C00C05D0055C400 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B0C8E361C00C05D0055C400 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B0C8E381C00C05D0055C400 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B0DCA0F1C01EF640046F9D7 /* Info.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Info.jpg; path = Assets.xcassets/Info.jpg; sourceTree = "<group>"; };
+		3B0DCA111C01F3220046F9D7 /* AKPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKPickerView.h; sourceTree = "<group>"; };
+		3B0DCA121C01F3220046F9D7 /* AKPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKPickerView.m; sourceTree = "<group>"; };
+		3B0DCA141C0239560046F9D7 /* SKDropDown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKDropDown.h; sourceTree = "<group>"; };
+		3B0DCA151C0239560046F9D7 /* SKDropDown.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKDropDown.m; sourceTree = "<group>"; };
 		3B6DE5FE1C0190AD00DC9D83 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = ../Bolts.framework; sourceTree = "<group>"; };
 		3B6DE5FF1C0190AD00DC9D83 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = ../Parse.framework; sourceTree = "<group>"; };
 		3B6DE6021C0190C100DC9D83 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -104,6 +112,8 @@
 				3B0C8E2B1C00C05D0055C400 /* AppDelegate.m */,
 				3B0C8E2D1C00C05D0055C400 /* ViewController.h */,
 				3B0C8E2E1C00C05D0055C400 /* ViewController.m */,
+				3B0DCA141C0239560046F9D7 /* SKDropDown.h */,
+				3B0DCA151C0239560046F9D7 /* SKDropDown.m */,
 				3B0C8E301C00C05D0055C400 /* Main.storyboard */,
 				3B0C8E331C00C05D0055C400 /* Assets.xcassets */,
 				3B0C8E351C00C05D0055C400 /* LaunchScreen.storyboard */,
@@ -116,6 +126,9 @@
 		3B0C8E271C00C05D0055C400 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3B0DCA111C01F3220046F9D7 /* AKPickerView.h */,
+				3B0DCA121C01F3220046F9D7 /* AKPickerView.m */,
+				3B0DCA0F1C01EF640046F9D7 /* Info.jpg */,
 				3B6DE6161C01915600DC9D83 /* Accounts.framework */,
 				3B6DE6171C01915600DC9D83 /* Social.framework */,
 				3B6DE6121C01914500DC9D83 /* libsqlite3.dylib */,
@@ -196,6 +209,7 @@
 				3B0C8E371C00C05D0055C400 /* LaunchScreen.storyboard in Resources */,
 				3B0C8E341C00C05D0055C400 /* Assets.xcassets in Resources */,
 				3B0C8E321C00C05D0055C400 /* Main.storyboard in Resources */,
+				3B0DCA101C01EF640046F9D7 /* Info.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,6 +222,8 @@
 			files = (
 				3B0C8E2F1C00C05D0055C400 /* ViewController.m in Sources */,
 				3B0C8E2C1C00C05D0055C400 /* AppDelegate.m in Sources */,
+				3B0DCA161C0239560046F9D7 /* SKDropDown.m in Sources */,
+				3B0DCA131C01F3220046F9D7 /* AKPickerView.m in Sources */,
 				3B0C8E291C00C05D0055C400 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
